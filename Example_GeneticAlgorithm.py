@@ -82,7 +82,7 @@ for iteration in range(200):
     If the previous parents have some common degaradation, mutation can fix it.
     Increasing mutation percentage will degarde next generations.
     """
-    new_population = GARI.mutation(new_population, mut_percent=mutation_percent)
+    new_population = GARI.mutation(new_population, num_parents_mating, mut_percent=mutation_percent)
     """
     Save best individual in the generation as an image for later visualization.
     """
