@@ -160,7 +160,7 @@ def mutation(population, mut_percent):
     Applying mutation by selecting a predefined percent of genes randomly.
     Values of the randomly selected genes are changed randmly.
     """
-    for idx in range(population.shape[0]):
+    for idx in range(num_parents_mating, population.shape[0]):
         # A predefined percent of genes are selected randomly.
         rand_idx = numpy.uint32(numpy.random.random(size=numpy.uint32(mut_percent/100*population.shape[1]))
                                                     *population.shape[1])
