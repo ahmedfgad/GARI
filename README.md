@@ -20,6 +20,8 @@ Contact info:
 ahmed.fawzy@ci.menofia.edu.eg
 https://www.linkedin.com/in/ahmedfgad/
 
+In 1 May 2019, I wrote a tutorial discussing this project. The tutorial is titled "Reproducing Images using a Genetic Algorithm with Python" which is published at Heartbeat by Fritz at this link: https://heartbeat.fritz.ai/reproducing-images-using-a-genetic-algorithm-with-python-91fc701ff84
+
 Here is an example of input image and how it is evolved after some iterations.
 
 <h1>Original Image</h1>
