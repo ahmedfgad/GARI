@@ -55,3 +55,12 @@ Here is an example of input image and how it is evolved after some iterations.
 <h1>Generation 15,000</h1>
 
 ![solution_15000](https://user-images.githubusercontent.com/16560492/36948877-96df3534-1fe9-11e8-8722-697d1047c1ff.png)
+
+## For Contacting thr Author
+* E-mail: ahmed.f.gad@gmail.com
+* [LinkedIn](https://www.linkedin.com/in/ahmedfgad)
+* [Amazon Author Page](https://amazon.com/author/ahmedgad)
+* [Hearbeat](https://heartbeat.fritz.ai/@ahmedfgad)
+* [KDnuggets](https://kdnuggets.com/author/ahmed-gad)
+* [TowardsDataScience](https://towardsdatascience.com/@ahmedfgad)
+* [GitHub](https://github.com/ahmedfgad)
