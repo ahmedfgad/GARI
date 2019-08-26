@@ -155,7 +155,7 @@ def crossover(parents, img_shape, n_individuals=8):
     
     return new_population
 
-def mutation(population, mut_percent):
+def mutation(population, num_parents_mating, mut_percent):
     """
     Applying mutation by selecting a predefined percent of genes randomly.
     Values of the randomly selected genes are changed randmly.
