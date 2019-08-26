@@ -1,7 +1,7 @@
 import os
 import sys
 import numpy
-import skimage.io, skimage.color, skimage.exposure
+import scipy.misc
 import itertools
 import GARI
 
@@ -29,7 +29,7 @@ https://www.linkedin.com/in/ahmedfgad/
 """
 
 # Reading target image to be reproduced using Genetic Algorithm (GA).
-target_im = skimage.io.imread(fname='fruit.jpg')
+target_im = scipy.misc.imread('fruit.jpg')
 # Target image after enconding. Value encoding is used.
 target_chromosome = GARI.img2chromosome(target_im)
 
@@ -61,7 +61,7 @@ if(num_required_permutations>num_possible_permutations):
 new_population = GARI.initial_population(img_shape=target_im.shape, 
                                          n_individuals=sol_per_pop)
 
-for iteration in range(200):
+for iteration in range(10000):
     # Measing the fitness of each chromosome in the population.
     qualities = GARI.cal_pop_fitness(target_chromosome, new_population)
     print('Quality : ', numpy.max(qualities), ', Iteration : ', iteration)
@@ -82,7 +82,9 @@ for iteration in range(200):
     If the previous parents have some common degaradation, mutation can fix it.
     Increasing mutation percentage will degarde next generations.
     """
-    new_population = GARI.mutation(new_population, num_parents_mating, mut_percent=mutation_percent)
+    new_population = GARI.mutation(population=new_population, 
+                                   num_parents_mating=num_parents_mating, 
+                                   mut_percent=mutation_percent)
     """
     Save best individual in the generation as an image for later visualization.
     """
