@@ -23,6 +23,25 @@ pip3 install pygad
 
 PyGAD is developed in Python 3.7.3 and depends on NumPy for creating and manipulating arrays and Matplotlib for creating figures. The exact NumPy version used in developing PyGAD is 1.16.4. For Matplotlib, the version is 3.1.0.
 
+# PyGAD Installation
+
+To install [PyGAD](https://pypi.org/project/imageio/), simply use pip to download and install the library from [PyPI](https://pypi.org/project/imageio/) (Python Package Index). The library lives a PyPI at this page https://pypi.org/project/imageio/.
+
+For Windows, issue the following command:
+
+```python
+pip install imageio
+```
+
+For Linux and Mac, replace `pip` by use `pip3` because the library only supports Python 3.
+
+```python
+pip3 install imageio
+```
+
+Imageio is a Python library that provides an easy interface to read and write a wide range of image data, including animated images, volumetric data, and scientific formats. It is cross-platform, runs on Python 3.5+, and is easy to install.
+
+
 # Project Steps
 
 The steps to follow in order to reproduce an image are as follows:
